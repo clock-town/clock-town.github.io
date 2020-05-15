@@ -7,35 +7,59 @@
 	<meta property="og:site_name" content="Clocktown Website">
 	<meta property="og:description" content="In a separate dimension called Termina, Majora's Mask tries to cause the end of the world by making the moon fall from the sky.">
 	<link rel="shortcut icon" href="favicon.png">
-	
-	
-	
-	
-	
-	
-  <title>Clocktown Website</title>
+
+  
+  
+  
+  
   <style type="text/css">
-    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p2 {margin: 5.0px 5.0px 12.0px 0.0px; font: 12.0px Times; color: #ffffff; -webkit-text-stroke: #fff}
     span.s1 {font-kerning: none}
+	body { background-color: black;
+		color: white;
+		font-family: "ArialNarrow", Arial, sans-serif;
+		text-align: center;
+		line-height: 0.03; }
+	h1 { font-size: 90px; letter-spacing: -5px; }
+	h1, h3 { text-transform:capitalize; }
+	h2, h3 { font-size: 40px; letter-spacing: -2px; font-weight: lighter; }
+	h2 { font-family: "Arial", Arial, sans-serif; }
+	h3 { line-height: 0.8; }
+	#card { position:relative; height: 200px; top:80px; }
+	#inputs { position:relative; top:100px; }
   </style>
 </head>
 <body>
-	<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>M O O N</b></span></h1>
-	<img src="moon.jpeg" alt="M O O N">
+
+	<div id="card">
+		<h2>Dawn of</h2>
+		<h1 id="line1">The First Day</h1>
+		<h3 id="line2">-72 Hours Remain-</h3>
+		<div id="inputs">
+	</div>
 	
-	<p id="mooncountdown"> 72 hours 0 minutes 0 seconds until impact</p>
+	<h2 style="color:green;"><span class="s1">Big things are coming soon.<br></span></h2>
+	
+	<h3></h3>
+	<h2 style="color:green;"><span class="s1"><b><u>Welcome to Clock Town.</u></b></span></h2>
+	
+	
+	<img src="moon.png" alt="M O O N">
+	
+	<p id="mooncountdown" > 72 hours 0 minutes 0 seconds until impact</p>
+	
 	<img id="majora" src="" alt="">
 		<script>
 		// Set the date we're counting down to
 		var countDownDate = new Date("May 30, 2020 00:00:00").getTime();
 		var seventytwo = new Date().getTime() + (1000 * 60 * 60 * 72);  
-		// Update the count down every second
+		// Update the count down every 1 second
 		var x = setInterval(function() {
 		
 		  // Get today's date and time
 		  var now = new Date().getTime();
 		  
-		  // Find the distance between now and the countdown date
+		  // Find the distance between now and the count down date
 		  var distance = seventytwo-now;  //countDownDate - now;
 		    
 		  // Time calculations for days, hours, minutes and seconds
